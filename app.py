@@ -35,7 +35,7 @@
 #             elif d_day <= 120: return ['background-color: #87CEEB'] * len(row) # 하늘색
 #             return [''] * len(row)
 
-#         st.subheader("📍 공장별 만기 현황")
+#         st.subheader(" 공장별 만기 현황")
 #         st.dataframe(df.style.apply(color_expiry, axis=1), use_container_width=True)
         
 #         # 데이터 저장 버튼
@@ -107,7 +107,7 @@ if uploaded_file:
         title="공장별 심사 만기 로드맵"
     )
 
-    # 그래프 레이아웃 최적화 (사진과 유사한 형태)
+    # 그래프 확인 필요!!
     fig.update_yaxes(autorange="reversed") # 최신 항목이 위로 오게
     fig.update_layout(
         xaxis_title="날짜 흐름",
