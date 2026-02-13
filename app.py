@@ -58,7 +58,7 @@ st.title("QA team")
 uploaded_file = st.file_uploader("엑셀 파일을 업로드하세요", type=["xlsx"])
 
 if uploaded_file:
-    # 1. 데이터 로드 (J열이 만기일인 구조 반영)
+    # 1. 데이터 로드 (J열이 만기일인 구조 반영) / 병합 해제
     df = pd.read_excel(uploaded_file, header=None, skiprows=2)
     df = df[[2, 5, 9]] # C(Buyer), F(Factory), J(Expiry Date)
     df.columns = ['Buyer', 'Factory', 'Expiry Date']
@@ -80,7 +80,7 @@ if uploaded_file:
 
     df['Status_Label'] = df['D-Day'].apply(get_color_label)
 
-    # 색상 맵핑 설정
+    # 색상 맵핑 설정 /다시확인필요
     color_map = {
         '만기 지남 (핑크)': '#FFC0CB',
         '30일 이내 (빨강)': '#FF0000',
@@ -90,7 +90,7 @@ if uploaded_file:
         '여유 (기타)': '#D3D3D3'
     }
 
-    # 3. 간트 차트(Timeline) 생성
+    # 3. 간트 차트(Timeline) 생성 / 오류확인필요
     st.subheader("🗓️ 만기 일정 타임라인 그래프")
     
     # 그래프용 데이터 가공 (오늘부터 만기일까지의 막대 생성)
