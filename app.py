@@ -7,6 +7,7 @@
 
 # uploaded_file = st.file_uploader("엑셀 파일을 업로드하세요", type=["xlsx"])
 
+
 # if uploaded_file:
 #     # 1. 헤더 없이 데이터를 통째로 가져옵니다.
 #     # skiprows를 조정하여 실제 데이터가 시작되는 행 바로 전까지 건너뜁니다.
