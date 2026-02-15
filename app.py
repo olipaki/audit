@@ -81,7 +81,7 @@ if uploaded_file:
 
     df['Status_Label'] = df['D-Day'].apply(get_color_label)
 
-    # 색상 맵핑 설정 /다시확인필요
+    # 색상 맵핑 설정 /다시확인필요 / ß
     color_map = {
         '만기 지남 (핑크)': '#FFC0CB',
         '30일 이내 (빨강)': '#FF0000',
