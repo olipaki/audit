@@ -136,7 +136,7 @@
 
 #     except Exception as e:
 #         st.error(f"데이터 처리 중 오류가 발생했습니다: {e}")
-################################
+################################와 최종 마음에 들음 여기기기ㅣㅣㅣㅣㅣㅣㅣㅣ
 import streamlit as st
 import pandas as pd
 import plotly.express as px
