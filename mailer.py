@@ -6,6 +6,7 @@ from datetime import datetime
 import schedule
 import time
 
+
 def send_audit_report():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 메일 발송 프로세스를 시작합니다.")
     
