@@ -1,3 +1,5 @@
+#자동메일 커밋커밋커밋
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
